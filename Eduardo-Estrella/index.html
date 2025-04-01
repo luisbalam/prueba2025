@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mi Página Personal</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body y fondo */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Contenedor principal */
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            width: 100%;
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Imagen de perfil */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 20px;
+        }
+
+        /* Títulos y texto */
+        h1 {
+            font-size: 2.5rem;
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        /* Enlaces */
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        /* Estilos para las secciones de la página */
+        .info {
+            margin-top: 20px;
+        }
+
+        /* Diseño responsivo */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <img src="img/Eduardo-Estrella.png" alt="profile photo" class="profile-img">
+
+
+        <h1>Hola, soy Eduardo Estrella</h1>
+        <p>Bienvenido a mi página personal. Aquí encontrarás información sobre mí, mis intereses y mis proyectos.</p>
+
+        <div class="info">
+            <p><strong>Edad:</strong> 24 años</p>
+            <p><strong>Profesión:</strong> Desarrollador Web</p>
+            <p><strong>Hobbies:</strong> Programar, leer, viajar</p>
+            <p><strong>Redes Sociales:</strong></p>
+            <p>
+                <a href="https://github.com/EduardoEstrellaa" target="_blank">GitHub</a>
+            </p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
